@@ -7,7 +7,7 @@ export default function Cart() {
 
   const Imagen =   {
 
-backgroundImage: `url('/preE/p.jpg')`,
+backgroundImage: `url('${import.meta.env.BASE_URL}preE/p.jpg')`,
 backgroundSize: "cover",
 backgroundPosition: "center",
 minHeight: "100vh",
