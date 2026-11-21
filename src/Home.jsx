@@ -1,4 +1,3 @@
-
 export default function Home() {
   return (
     <div style={{ padding: "50px", textAlign: "center", background: "#aa9895", minHeight: "80vh" }}>
@@ -17,7 +16,7 @@ export default function Home() {
             borderRadius: "12px", 
             boxShadow: "0px 4px 15px rgba(0,0,0,0.3)" 
           }}
-          src="/preE/video.mp4">
+          src={`${import.meta.env.BASE_URL}preE/video.mp4`}>
           Tu navegador no soporta el elemento de video.
         </video>
       </section>
