@@ -6,7 +6,7 @@ export default function Nosotros() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/escritores.json")
+    fetch(`${import.meta.env.BASE_URL}escritores.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("No se pudo cargar la información de los escritores.");
